@@ -23,3 +23,4 @@ Each module has its own README with setup instructions specific to that part.
 
 ##rules
 -daily updates has to be made here.
+-everyone learn what u are doing.

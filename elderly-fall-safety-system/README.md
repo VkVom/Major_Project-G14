@@ -20,3 +20,6 @@ Camera → M1 (Pose) → M2 (Features) → M3 (Temporal Model) → M4 (Decision 
 
 ## Setup
 Each module has its own README with setup instructions specific to that part.
+
+##rules
+-daily updates has to be made here.

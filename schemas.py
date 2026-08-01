@@ -9,9 +9,24 @@ class FeatureVector:
     timestamp: float
     features: Dict[str, float]
 
+    # Exact feature order expected by our trained LSTM
+    FEATURE_ORDER = [
+        "torso_tilt_deg",
+        "hip_velocity_mps",
+        "shoulder_accel_mps2",
+        "left_knee_angle",
+        "right_knee_angle",
+        "cog_shift_x"
+    ]
+
     def to_array(self) -> list:
-        """Returns ordered float vector for ML model input."""
-        return list(self.features.values())
+        """
+        Convert features into the exact order required by the LSTM.
+        """
+        return [
+            float(self.features[name])
+            for name in self.FEATURE_ORDER
+        ]
 
 
 @dataclass

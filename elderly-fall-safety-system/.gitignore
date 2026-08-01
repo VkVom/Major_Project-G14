@@ -1,0 +1,27 @@
+# Virtual environments
+venv/
+env/
+*/venv/
+*/env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large model files (optional - remove these lines if you want to push models to GitHub)
+# *.task
+# *.pt
+# *.h5
+
+# Logs and data (optional - remove if you want to track your recorded clips)
+# m1-pose-estimation/data/*
+# m4-decision-engine/logs/*
+
+# Editor folders
+.vscode/
+.idea/
